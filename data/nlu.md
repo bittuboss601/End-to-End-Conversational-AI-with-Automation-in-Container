@@ -1,0 +1,948 @@
+## intent:greet
+- Bom dia
+- Bonjour
+- Good Morning
+- Good morning
+- Good mourning
+- Guten Morgen
+- HELLO
+- HEY
+- HEllo
+- HI
+- HI Sara
+- Hallo
+- Hei
+- Hellllooooooo
+- Hello
+- Hello Bot
+- Hello Rasa
+- Hello Sara
+- Hello sara
+- Hello!
+- Hey
+- Hey Sara
+- Hey bot
+- Heya
+- Heylo
+- Hi
+- Hi Sara
+- Hi Sara!
+- Hi bot
+- Hi man
+- Hi rasa
+- Hi sara
+- Hi sara..
+- Hi there
+- Hi!
+- Hi'
+- Hi,
+- Hi, bot
+- Hieee
+- Hieeeeeeeeeeeee
+- Hola
+- I said, helllllloooooO!!!!
+- Well hello there ;)
+- What is up?
+- Whats up
+- Whats up my bot
+- Whats up?
+- ayyyy whaddup
+- bonjour
+- ey boss
+- good evening
+- good moring
+- good morning
+- greet
+- greetings
+- hai
+- hallo
+- hallo sara
+- halloo
+- halloooo
+- halo
+- halo sara
+- heeey
+- heelio
+- hell9o
+- hellio
+- hello
+- hello Sara
+- hello everybody
+- hello friend
+- hello hi
+- hello is anybody there
+- hello it is me again
+- hello robot
+- hello sara
+- hello sweatheart
+- hello sweet boy
+- hello there
+- hello world
+- hello, my name is Charles Pfeffer](name)
+- hello?
+- hello]
+- hellooo
+- helloooo
+- helo
+- hey
+- hey bot
+- hey bot!
+- hey dude
+- hey hey
+- hey let's talk
+- hey rasa
+- hey sara
+- hey ther
+- hey there
+- hey there boy
+- hey there..
+- hey, let's talk
+- hey, sara!
+- heya
+- heyho
+- heyo
+- hhola
+- hi
+- hi !
+- hi Mister
+- hi again
+- hi can you speak ?
+- hi folks
+- hi friend
+- hi friends
+- hi hi
+- hi i'm Sandra Hernandez](name)
+- hi im Amanda Anderson](name)
+- hi mrs rasa
+- hi pal!
+- hi sara
+- hi there
+- hi there it's me
+- hi!
+- hi.........................................................
+- hi?
+- hieee
+- hii
+- hiihihi
+- hiii
+- hlo
+- hola
+- howdy
+- i am Karen Mease](name)
+- jojojo
+- jop
+- konichiwa
+- merhaba
+- ola sara
+- rasa hello
+- salut
+- sup
+- wasssup
+- wasssup!
+- what up
+- whats popping
+- whats up
+- yo
+- yoo
+- ssup?
+- helleo
+
+## intent:goodbye
+- Bye
+- Bye bye
+- adios
+- adios?
+- bye
+- bye .
+- bye :P
+- bye bot
+- bye bye
+- bye bye bot
+- bye for now
+- bye udo
+- bye was nice talking to you
+- bye!
+- byee
+- catch you later
+- ciao
+- cya
+- farewell
+- good bye
+- good bye rasa bot!
+- good night
+- goodbye
+- goodbye.
+- goodnight
+- gotta go
+- k byyye #slay
+- ok Bye
+- ok bye
+- ok, bye
+- ok.bye
+- see u later
+- see ya
+- see you
+- see you . bye
+- take care
+- then bye
+- tlak to you later
+- toodle-oo
+- Exit
+- Close this talk
+- byr
+
+## intent:deny
+- I don't want to
+- I don't want to give it to you
+- I don't want to say
+- I dont want to tell
+- I'm not giving you my email address
+- I'm not going to give it to you
+- NEIN
+- NO
+- NO DON"T WANT THIS!
+- Nah
+- Neither
+- Never
+- Nevermind
+- No
+- No thank you
+- No, not really.
+- No, thank you
+- No.
+- Nopes
+- Not really
+- absolutely not
+- decline
+- definitely not
+- deny
+- i decline
+- i don not like this
+- i don't think so
+- i don't want either of those
+- i don't want to
+- i don't want to give you my email
+- i dont want to
+- i dont want to accept :P lol
+- i guess it means - no
+- i'm afraid not
+- i'm not sure
+- it is going pretty badly
+- it sucks
+- it sux
+- n
+- na
+- nah
+- nah I'm good
+- nah not for me
+- nah, first time
+- nah, i'm good
+- nehi
+- nein
+- neither
+- never
+- never mind
+- no
+- no :(
+- no I dont want
+- no I haven't decided yet if I want to sign up
+- no and no again
+- no bots at all
+- no go
+- no i can't
+- no i don't accept
+- no i dont want to
+- no i dont want to accept :P lol
+- no i won't
+- no ma'am
+- no sir
+- no sorry
+- no thank s
+- no thank you
+- no thanks
+- no way
+- no you did it wrong
+- no!!!!
+- no, i hate it
+- no, my frst time
+- no, thank you
+- no, thanks
+- no, thankyou
+- no. u r idiot
+- non
+- noooooooooo
+- noooooooooooooooooooooooooooooooooooooooo
+- nop
+- nope
+- nope!
+- nope. i am good
+- not going well at all
+- not really
+- not right now
+- not yet
+- nö
+- sorry not right now
+- still dont want to tell
+- thanks but no thanks
+- this sucks
+- very bad
+- I do not need help installing
+- I don't wanna tell the name of my company
+- no stop
+- stop it, i do not care!!!
+- none of them
+- I don't agree
+
+## intent:mood_great
+- perfect
+- very good
+- great
+- amazing
+- wonderful
+- I am feeling very good
+- I am great
+- I'm good
+
+## intent:mood_unhappy
+- sad
+- very sad
+- unhappy
+- bad
+- very bad
+- awful
+- terrible
+- not very good
+- extremely sad
+- so sad
+
+## intent:bot_challenge
+- are you a bot?
+- are you a human?
+- am I talking to a bot?
+- am I talking to a human?
+
+## intent:affirm
+- yes
+- indeed
+- of course
+- that sounds good
+- correct
+- thank you
+- thanks
+- okay
+- ok
+- sure
+- offcourse
+- why not
+- Accept
+- Awesome!
+- Good
+- Great
+- I accept
+- I accept.
+- I agree
+- I am using it
+- I changed my mind. I want to accept it
+- I do
+- I get it
+- I guess so
+- I have used it in the past
+- I will
+- I'd absolutely love that
+- I'm sure I will!
+- I'm using it
+- Nice
+- OK
+- Ofcourse
+- Oh yes
+- Oh, ok
+- Ok
+- Ok let's start
+- Ok.
+- Okay
+- Okay!
+- PLEASE
+- SURE
+- Sure
+- Sweet
+- That would be great
+- YES
+- YUP
+- Yea
+- Yeah
+- Yeah sure
+- Yep
+- Yep that's fine
+- Yep!
+- Yepp
+- Yes
+- Yes I do
+- Yes please
+- Yes please!
+- Yes, I accept
+- Yes.
+- Yup
+- a little
+- absolutely
+- accept
+- accepted
+- agreed
+- ah ok
+- alright
+- alright, cool
+- amayzing
+- amazing!
+- awesome
+- awesome!
+- confirm
+- cool story bro
+- definitely yes without a doubt
+- done
+- fair enough
+- fcourse
+- fine
+- fuck yeah!
+- go
+- go ahead
+- go for it
+- going super well
+- good.
+- great
+- great lets do that
+- great!
+- hell yeah
+- hell yes
+- hm, i'd like that
+- how nice!
+- i accept
+- i agree
+- i am!
+- i want that
+- i will!
+- it is ok
+- its okay
+- ja
+- ja cool
+- ja thats great
+- jezz
+- jo
+- k
+- kk
+- lets do it
+- lets do this
+- not bad
+- of course
+- ofcoure i do
+- ofcourse
+- oh awesome!
+- oh cool
+- oh good !!
+- oh super
+- ok
+- ok cool
+- ok fine
+- ok friend
+- ok good
+- ok great
+- ok i accept
+- ok sara
+- ok, I behave now
+- ok, I understood
+- ok, Sara
+- ok...
+- okay
+- okay cool
+- okay sure
+- okay..
+- oki doki
+- okie
+- ook
+- oui
+- perfect
+- please
+- si
+- sort of
+- sure
+- sure thing
+- sure!
+- that is cool
+- that ok
+- that sounds fine
+- that's great
+- thats fine
+- thats good
+- thats great
+- top
+- uh-huh
+- very much
+- well yes
+- y
+- ya
+- ya cool
+- ya go for it
+- ya i want
+- ya please
+- ya thats cool
+- yaah
+- yap
+- yaps
+- yas
+- yay
+- ye
+- ye splease
+- yea
+- yeah
+- yeah do that
+- yeah sure
+- yeah'=
+- yeah, why not
+- yeeeeezzzzz
+- yeeees
+- yep
+- yep i want that
+- yep if i have to
+- yep please
+- yep that's nice
+- yep thats cool
+- yep, will do thank you
+- yep. :/
+- yes
+- yes ...
+- yes I do
+- yes accept please
+- yes baby
+- yes cool
+- yes give me information
+- yes go ahead
+- yes go for it
+- yes great
+- yes i accept
+- yes i agree
+- yes i have built a bot before
+- yes i have!
+- yes it is
+- yes it was okay
+- yes of course
+- yes pleae
+- yes please
+- yes please!
+- yes pls
+- yes sirfr
+- yes that's great
+- yes that's what i want
+- yes you can
+- yes'
+- yes, I'd love to
+- yes, cool
+- yes, give me information, please
+- yes,i am
+- yes.
+- yesh
+- yess
+- yessoo
+- yesss
+- yesssss
+- yesyestyes
+- yesyesyes
+- yez
+- yop
+- you asked me a yes or no question, which i answered with yes
+- you got me, I accept, if you want me to
+- yres
+- ys
+- yup
+- yyeeeh
+- Okay cool
+- ok..
+- considering
+- More a less
+- cool beans
+- sounds good!
+- really
+
+## intent:chitchat/ask_howdoing
+- Ahoy matey how are you?
+- Are you ok?
+- Do you feel good?
+- Do you have a great day?
+- HI Sara, what are you up to?
+- Hi Sara! How are you?
+- How are You?
+- How are things?
+- How are you
+- How are you men?
+- How are you today?
+- How are you?
+- How was your day?
+- How you doing?
+- How's it going
+- How's it hanging?
+- How's life treating you friend?
+- How've you been?
+- Hows it going
+- I'm fine and you
+- Is everything ok?
+- What's going on?
+- What's new?
+- What's up
+- What's up man
+- and you
+- are you alright
+- are you happy
+- are you having a good day
+- are you ok
+- are you okay
+- h r u ?
+- hello, how are you?
+- hey how are you?
+- hi how are you?
+- hi how u doing
+- hi sara, how are you?
+- how ?
+- how are things going
+- how are things with you?
+- how are u
+- how are u?
+- how are xou
+- how are you
+- how are you ?
+- how are you doing
+- how are you doing this morning
+- how are you doing today my sweet friend
+- how are you doing today?
+- how are you doing?
+- how are you feeling
+- how are you today
+- how are you'
+- how are you?
+- how are you????
+- how are yuo
+- how do you do?
+- how have you been
+- how is it going
+- how is your day
+- how is your day going
+- how is your evening
+- how r u
+- how r u ?
+- how r u>
+- how you doing
+- how you doing?
+- how's it going?
+- how's life
+- how's life been treating you?
+- how's your day going
+- howareyou
+- hw r u?
+- is everything all right
+- is everything okay
+- nah, I'm good - how are you doing?
+- okay hi how are you?
+- wassup>
+- what about your day
+- what are you up to?
+- what's good
+- what's up
+- what's up sara
+- what's up?
+- whatchcha doing
+- whatchya upto ?
+- whats goin on
+- whats new
+- whatsapp
+
+## intent:thank
+- Cool. Thanks
+- Great, thanks
+- Thank you
+- Thank you Sara
+- Thank you so much
+- Thank's!
+- Thanks
+- Thanks bot
+- Thanks for that
+- Thanks!
+- amazing, thanks
+- cheers
+- cheers bro
+- cool thank you
+- cool thanks
+- cool, thanks
+- danke
+- great thanks
+- ok thanks
+- ok thanks sara
+- ok thanks!
+- perfect thank you
+- thank u
+- thank you
+- thank you anyways
+- thanks
+- thanks a bunch for everything
+- thanks a lot
+- thanks for forum link, I'll check it out
+- thanks for the help
+- thanks this is great news
+- thanks you
+- thanks!
+- thankyou
+- thnks
+- thx
+- yes thanks
+- thanks for your information
+- thanks f
+
+## intent:phone_number
+- 7020471479
+- 9168810003
+- 7521532582
+- 5248215621
+- 2124512531
+- 5248215621
+- 1456322121
+- 6176219321
+- 6541603357
+- 8618621856
+- +915215301535
+- +915465132154
+- 918793642321
+
+## intent:info
+- my name is [Purnendu Tiwari](name)
+- i am [Alpha Tiwari](name)
+- my name is [Aamir Hussain](name)
+- [Tarun Goyal](name)
+- [Rohit Shetty](name)
+- my name is [Salman Khan](name)
+- this is [Narendra Modi](name)
+- my name is [Yashvi Rai](name)
+- you can call me [Jhumpa Lehri](name) 
+- [Divyansh Sharma](name)
+- i am [Shakuntla Devi](name)
+- my contact number is [1234567890](phone_number)
+- my phone number is [5432123456](phone_number)
+- my contact number is [+919954023699](phone_number)
+- [+912345678910](phone_number)
+- [+018825275049](phone_number)
+- my cell number is [+649661779805](phone_number)
+- [1234567890](phone_number)
+- my email id is [abcd@gmail.com](email)
+- email id [efgh@gmail.com](email)
+- [qwer@gmail.com](email)
+- [mnopq@yahoo.com](email)
+- [mnopw@rediffmail.in](email)
+- [abc.1bc@outlook.com](email)
+- my email is [gjil@gmail.com](email)
+- [Purnendu](name)
+- [Bittu](name)
+- [Shanu Jha](name)
+- [Talha Shaikh](name)
+- [Ashish Sharma](name)
+- [Ashish](name)
+- [Rohit](name)
+
+## intent:get_district
+- i am from [Patna](district)
+- i am from [patna](district)  
+- i live in [Gaya](district)
+- i live in [gaya](district)  
+- [Bhagalpur](district)
+- [bhagalpur](district)
+- [Gaya](district)  
+- [gaya](district)
+- [Begusarai](district)  
+- [begusarai](district)
+- [Vaishali](district)  
+- [vaishali](district)
+- [West Champaran](district)  
+- [west champaran](district)
+- [East Champaran](district)  
+- [east champaran](district)
+- [Nawada](district)  
+- [nawada](district)
+
+## intent:react_negative
+- I am feeling bad
+- I am sad
+- I am super sad
+- I'm sad
+- I'm super sad
+- Now I'm sad
+- This is bad
+- You are quite bad
+- bad
+- bad boy
+- crappy joke
+- documentation of rasa is very bad
+- i am angry over you
+- i am feel sad
+- i am sad
+- i am sad about that
+- i am very sad
+- i feel sad
+- i sad
+- i'm sad
+- rasa is bad
+- sad
+- so sad
+- so sad :(
+- super sad
+- u broke my heart
+- very very sad
+- you are bad
+- you are bad bot
+- you make me sad
+- You are mad
+- You are rude
+- bots are bad
+- i don't care!!!!
+- i dont like bots
+- this is a really frustrating experience
+- you're rather dull
+- i am so worry
+- i will leave
+- Although I understand your still in development, I feel a little bit disappointed.
+- Surely you're not so smart lik i thought
+- iam not feeling good
+- not good
+- Thats so rude
+- sadly
+- That tool here isnt good
+- boring
+
+## intent:canthelp
+- I think you cant help me
+- and that's it?
+- and you call yourself bot company? pff
+- do you get anything?
+- exit
+- exit now
+- hey, you promised to contact me, but nobody did, I really need to finish that car insurance bot!!!!
+- hm i don't think you can do what i want
+- i guess you can't help me then
+- nothing else?
+- ok i guess you can't help me
+- ok then you cant help me
+- ok, but that doesnt help me
+- stop
+- stop go back
+- stop this conversation
+- that was shit, you're not helping
+- that's not what i want
+- this conversation is not really helpful
+- this is leading to nothing
+- you can't help me
+- you can't help me with what i need
+- you cannot help me with what I want
+- you cant help me
+- quit
+- that does not help
+
+## intent:react_positive
+- Cool
+- cool
+- cool :)
+- cool!
+- coolio
+- :)
+- :D
+- HAHA
+- I am happy
+- LOL
+- Lol
+- Lol thats funny
+- Looks nice
+- WOW
+- Wow
+- You are great
+- You're cute.
+- You're nice.
+- You're really cool
+- hAHAHA
+- ha ha
+- haha
+- hahah
+- hahaha
+- happy
+- i am feeling happy
+- i am happy
+- i am happy today
+- i am very happy with your response
+- i love you
+- it's pretty cool
+- lol
+- love you
+- okay Rasabot, you're cool
+- rasa is awesome
+- such a great demo
+- that is funny
+- that was a great interaction
+- thats funny
+- today was a nice day
+- wow
+- you are a badass bot!
+- you are awesome
+- you are cool
+- you are cool man
+- you are doin great
+- you are funny
+- you are great
+- you are my new bestfriend
+- you seem pretty cool :D
+- I like you
+- I love you
+- you are realy intelligent
+- I like Rasa
+- hèhè
+- like u
+- you are so smart
+- That's awesome.
+- Got it
+- you good
+- Great information
+- I mean to say that I liked the explanation
+
+## intent:local_medical_stores
+- medical stores
+- meedical storees
+- medicine storess
+- I'm looking for local medicine stores
+- medicine stores nearby
+- I need to purchase medicine
+- buy medicines
+- nearby medicine stores
+- nearby medical stores
+- medical stores nearby
+- medicine store nearby
+- medicine stores near me
+- medical store near me
+- I'm looking for medical stores
+- I'm looking for medicine stores
+- planning to buy medicines
+- planning to buy some medicines
+- search local medical stores
+- search for medicine stores
+- search medicine store near me
+- search medical store near me
+
+## intent:oxygen_tank
+- oxygen tank near me
+- oxygen refueling
+- oxygen refilling
+- oxygen supply stores
+- nearby oxygen tank store
+- near by oxygen store
+- buy oxygen tank
+- i need to purchase oxygen tank
+- oxygen tank refilling nearby
+- oxygen store near me
+- oxygen tank refueling nearby
+- oxygen tank refueling near me
+- oxygen tank supply near me
+- oxygen tank near me
+- I'm looking for oxygen tank services
+- planning to buy oxygen tank
+- search oxygen tank near me
+- search oxygen supply near me
+- search oxygen tank refueling near me
+- search for oxygen tank shops
