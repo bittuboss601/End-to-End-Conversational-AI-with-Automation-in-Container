@@ -19,6 +19,7 @@ services:
   rasa-actions:
     image: rasa-server-okteto:latest
     build: "./"
+    restart: always
     volumes:
     - ./actions:/app/actions
     command: bash -c "rasa run actions"

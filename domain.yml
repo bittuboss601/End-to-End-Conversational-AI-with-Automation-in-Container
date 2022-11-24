@@ -71,6 +71,7 @@ intents:
 - local_medical_stores
 - oxygen_tank
 - action_get_otp
+- action_get_geographic_info
 
 entity:
   - name
@@ -96,6 +97,10 @@ slots:
   age:
     type: text
   locality:
+    type: text
+  city:
+    type: text
+  country:
     type: text
 
 
@@ -186,6 +191,10 @@ responses:
   - text: You're most welcome ❤.
   utter_ask_district:
   - text: In which district you are looking for Bed information in Bihar?
+  utter_ask_city:
+  - text: You're from which city?
+  utter_ask_country:
+  - text: Could you please tell me your country name?
 
 actions:
 - action_menu
@@ -248,6 +257,7 @@ actions:
 - utter_ask_age
 - action_get_otp
 - utter_menu
+- action_get_geographic_info
 
 
 forms:
@@ -255,6 +265,7 @@ forms:
 - form_district
 - form_ask_doctor
 - form_get_otp
+- form_get_coordinates
 
 
 session_config:

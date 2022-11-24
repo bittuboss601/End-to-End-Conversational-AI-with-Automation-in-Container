@@ -357,6 +357,14 @@
 ## intent oxygen tank
 * oxygen_tank
   - action_oxygen
+  
+## greet + form get coordinates
+* greet
+  - action_hello_world
+* action_get_geographic_info
+  - action_get_geographic_info
+  - form_get_coordinates  
+  - form{"name": "form_get_coordinates"}
 
 
 

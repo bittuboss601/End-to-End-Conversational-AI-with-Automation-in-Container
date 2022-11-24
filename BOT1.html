@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  /* The image used */
+  background-image: url("dr.jpg");
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">HealthCare Bot</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      </div>
+    </div>
+  </nav>
+
+
+<div class="bg"></div>
+
+</body>
+</html>
+  
+  
+  <div id="webchat"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@0.11.5/lib/index.min.js"></script>
+  <script>
+    WebChat.default.init({
+      selector: "#webchat",
+      initPayload: "/greet",
+      customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+      socketUrl: "https://rasa-bittuboss601.cloud.okteto.net",
+      socketPath: "/socket.io/",
+      title: "Healthcare Bot",
+      subtitle: "Serving Humanity.",
+      params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
+    })
+  </script>
+
+

@@ -1,0 +1,8 @@
+okteto init -> to create menifest file
+okteto up --build -> to build containers
+okteto stack deploy --build -> to deploy the chatbot
+
+Command to use different namespace:-
+okteto context use https://cloud.okteto.com --namespace virtual-assistant-bittuboss601
+
+okteto context use https://cloud.okteto.com --namespace call-assistant-bittuboss601

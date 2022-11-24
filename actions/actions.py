@@ -257,7 +257,20 @@ class ActionHelloWorld(Action):
         dispatcher.utter_message(
             image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9FqQYM4E9mhuv7qof408LmEG6IMGIwZqE4A&usqp=CAU')
         # return [FollowupAction("utter_greet")]
-        return [FollowupAction("action_menu")]
+        return [FollowupAction("action_get_geographic_info")]
+
+class ActionGetGeographicInfo(Action):
+
+    def name(self) -> Text:
+        return "action_get_geographic_info"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        text = "Before getting started, I will need your geographic Information.\n"
+        dispatcher.utter_message(text=text)
+        return [FollowupAction("form_get_coordinates")]
 
 
 class ActionSupport(Action):
@@ -276,6 +289,66 @@ class ActionSupport(Action):
         dispatcher.utter_button_message(text, buttons)
 
         return []
+
+
+class FormGetCoordinates(FormAction):
+
+    def name(self) -> Text:
+        return "form_get_coordinates"
+
+    @staticmethod
+    def required_slots(tracker: Tracker) -> List[Text]:
+        """A list of required slots that the form has to fill
+           :param: tracker: Tracker
+           :return: List[Text]
+        """
+        return ["city", "country"]
+
+    def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+        """
+            This function maps the slot values
+            :return: Dict[Text, Union[Dict, List[Dict]]]
+        """
+        return {
+            "city": self.from_text(not_intent=["chitchat"]),
+            "country": self.from_text(not_intent=["chitchat"]),
+        }
+
+    def validate_city(self,
+                      value: Text,
+                      dispatcher: CollectingDispatcher,
+                      tracker: Tracker,
+                      domain: Dict[Text, Any],
+                      ) -> Dict[Text, Any]:
+        return {"city": value}
+
+    def validate_country(self,
+                      value: Text,
+                      dispatcher: CollectingDispatcher,
+                      tracker: Tracker,
+                      domain: Dict[Text, Any],
+                      ) -> Dict[Text, Any]:
+        return {"country": value}
+
+    def submit(
+            self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any],
+    ) -> List[Dict]:
+
+        """
+            This function retrieves slots information and performs the next step
+            :param: dispatcher: CollectingDispatcher
+            :param: tracker: Tracker
+            :param: domain: Dict[Text, Any]
+            :return: AllslotReset(), FollowupAction('action_live_agent')
+            """
+        city = tracker.get_slot("city")
+        country = tracker.get_slot("country")
+        return [FollowupAction("action_menu")]
+
+
 
 
 class FormContactUs(FormAction):
@@ -2129,6 +2202,8 @@ class ActionMedicalStore(Action):
 
         latest_action["ACTION"] = tracker.latest_message['intent'].get('name')
         print("LATEST ACTION ", latest_action["ACTION"])
+        city = tracker.get_slot("city")
+        country = tracker.get_slot("country")
         if len(medical_shop_info["MEDICAL_STORE"]) == 0:
 
             msg = 'Let me check for nearby medical stores. 😎'
@@ -2138,7 +2213,7 @@ class ActionMedicalStore(Action):
             time.sleep(2)
             search_box = driver.find_element_by_name("q")
             search_box.clear()
-            search_box.send_keys("Medical Stores near me")
+            search_box.send_keys(f"Medical Stores near me, {city}, {country}")
             driver.find_element_by_id('searchbox-searchbutton').click()
             time.sleep(3)
 
@@ -2205,6 +2280,8 @@ class ActionOxygen(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         latest_action["ACTION"] = tracker.latest_message['intent'].get('name')
+        city = tracker.get_slot("city")
+        country = tracker.get_slot("country")
         if len(medical_shop_info["OXYGEN"]) == 0:
 
             msg = 'Let me see 👓 ....oxygen containers availability. '
@@ -2214,7 +2291,7 @@ class ActionOxygen(Action):
             time.sleep(2)
             search_box = driver.find_element_by_name("q")
             search_box.clear()
-            search_box.send_keys("Oxygen Gas near me")
+            search_box.send_keys(f"Oxygen Gas near me, {city}, {country}")
             driver.find_element_by_id('searchbox-searchbutton').click()
             time.sleep(3)
 
@@ -2292,6 +2369,8 @@ class ActionAmbulance(Action):
 
         latest_action["ACTION"] = tracker.latest_message['intent'].get('name')
         print("LATEST ACTION ", latest_action["ACTION"])
+        city = tracker.get_slot("city")
+        country = tracker.get_slot("country")
         if len(medical_shop_info["AMBULANCE"]) == 0:
 
             msg = 'Let me check any ambulances 🚑 service is available or not. '
@@ -2301,7 +2380,7 @@ class ActionAmbulance(Action):
             time.sleep(2)
             search_box = driver.find_element_by_name("q")
             search_box.clear()
-            search_box.send_keys("Ambulance Service near me")
+            search_box.send_keys(f"Ambulance Service near me, {city}, {country}")
             driver.find_element_by_id('searchbox-searchbutton').click()
             time.sleep(3)
 
@@ -2531,6 +2610,8 @@ class ActionContactHospital(Action):
 
         latest_action["ACTION"] = tracker.latest_message['intent'].get('name')
         print("LATEST ACTION ", latest_action["ACTION"])
+        city = tracker.get_slot("city")
+        country = tracker.get_slot("country")
         if len(medical_shop_info["CONTACT_HOSPITAL"]) == 0:
 
             msg = 'Let me search for nearby Hospitals  🏥. '
@@ -2540,7 +2621,7 @@ class ActionContactHospital(Action):
             time.sleep(2)
             search_box = driver.find_element_by_name("q")
             search_box.clear()
-            search_box.send_keys("Hospitals near me")
+            search_box.send_keys(f"Hospitals near me, {city}, {country}")
             driver.find_element_by_id('searchbox-searchbutton').click()
             time.sleep(3)
 
